@@ -11,16 +11,24 @@ import Tournament from './pages/tournament';
 import SpecificTournament from './pages/specific_tournament';
 import SpecificMatch from './pages/specific_match';
 import Matches from './pages/matches';
+import TournamentData from './data/tournaments.json';
+import MatchData from './data/matches.json';
 
 function App() {
+
+  const data = {
+    "TournamentData": TournamentData,
+    "MatchData": MatchData
+  }
+
   return (
     <Routes>
-        <Route path="/" element={HomePage()} />
-        <Route path="/tournament" element={Tournament()} />
-        <Route path="/tournament/:id" element={SpecificTournament()} />
-        <Route path="/matches" element={Matches()} />
-        <Route path="/matches/:id" element={SpecificMatch()} />
-        <Route path="*" element={NotFoundPage()} />
+        <Route path="/" element={<HomePage/>} />
+        <Route path="/tournament/:TourID" element={<SpecificTournament data={data}/>} />
+        <Route exact path="/tournament" element={<Tournament data={data}/>}/>
+        <Route path="/matches/:MatchID" element={<SpecificMatch data={data}/>}/>
+        <Route exact path="/matches" element={<Matches data={data}/>} />
+        <Route path="*" element={<NotFoundPage/>} />
     </Routes>
   );
 }

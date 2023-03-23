@@ -2,18 +2,18 @@
 
 import Header from "../components/header";
 import Footer from "../components/footer";
+import { useParams } from "react-router-dom";
 
 const SpecificTournament = (props) => {
-  //get the id from the url 
-  const array_url = window.location.href.split("/tournament/");
-  const id = array_url[array_url.length - 1];
-  console.log(id);
+  //get the id from the hash
+  const { TourID } = useParams();
+  console.log(TourID);
   return (
     <>
       <Header />
       <div class="col-lg-12">
         <div class="page-content">
-          <h1>Specific Tournament Page {id}</h1>
+          <h1>Specific Tournament Page {TourID}</h1>
         </div>
       </div>
       <Footer />

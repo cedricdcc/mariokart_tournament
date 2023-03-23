@@ -25,7 +25,7 @@ function Header() {
           <div class="row">
             <div class="col-12">
               <nav class="main-nav">
-                <a href="/" class="logo">
+                <a href="#/" class="logo">
                   <img
                     src={logo}
                     alt=""
@@ -34,18 +34,18 @@ function Header() {
                 </a>
                 <ul class="nav">
                   <li>
-                    <a href="/" class="active">
+                    <a href="#/" class="active">
                       Home
                     </a>
                   </li>
                   <li>
-                    <a href="/tournament">Tournaments</a>
+                    <a href="#/tournament">Tournaments</a>
                   </li>
                   <li>
-                    <a href="/matches">Matches</a>
+                    <a href="#/matches">Matches</a>
                   </li>
                   <li>
-                    <a href="/">
+                    <a href="#/about">
                       About{" "}
                       <img src={shyguy} alt=""></img>
                     </a>

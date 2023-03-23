@@ -4,12 +4,13 @@ import Footer from "../components/footer";
 import Alltournamentstable from "../components/alltournaments_table";
 
 const Tournament = (props) => {
+  console.log(props);
   return (
     <>
       <Header />
       <div class="col-lg-12">
         <div class="page-content">
-          <Alltournamentstable/>
+          <Alltournamentstable data={props.data.TournamentData}/>
         </div>
       </div>
       <Footer />

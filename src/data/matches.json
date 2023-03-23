@@ -1,0 +1,192 @@
+[
+    {
+        "id": "1",
+        "tournamentID": "3",
+        "currentStage": "Group Stage",
+        "status": "finished",
+        "date": "2023-01-01",
+        "rankings":[
+            {
+                "player":"Player 1",
+                "points":"60"
+            },
+            {
+                "player":"Player 2",
+                "points":"50"
+            },
+            {
+                "player":"Player 3",
+                "points":"40"
+            },
+            {
+                "player":"Player 4",
+                "points":"30"
+            }
+        ],
+        "tournamentName": "Random",
+        "races":[
+            "Wii_Grumble_Volcano_Course",
+            "Neo_Bowser_City_Course",
+            "Big_Blue_Course",
+            "Cheep_Cheep_Beach_Course"
+        ]
+    },
+    {
+        "id":"2",
+        "tournamentID": "3",
+        "currentStage": "Group Stage",
+        "status": "finished",
+        "date": "2023-01-01",
+        "rankings":[
+            {
+                "player":"Player 1",
+                "points":"60"
+            },
+            {
+                "player":"Player 2",
+                "points":"50"
+            },
+            {
+                "player":"Player 3",
+                "points":"40"
+            },
+            {
+                "player":"Player 4",
+                "points":"30"
+            }
+        ],
+        "tournamentName": "Random",
+        "races":[
+            "Sunshine_Airport_Course",
+            "SNES_Rainbow_Road_Course",
+            "N64_Yoshi_Valley_Course",
+            "Hyrule_Circuit_Course"
+        ]
+    },
+    {
+        "id":"3",
+        "tournamentID": "3",
+        "currentStage": "Round of 16",
+        "date": "2023-01-01",
+        "status": "finished",
+        "rankings":[
+            {
+                "player":"Player 1",
+                "points":"60"
+            },
+            {
+                "player":"Player 2",
+                "points":"50"
+            },
+            {
+                "player":"Player 3",
+                "points":"40"
+            },
+            {
+                "player":"Player 4",
+                "points":"30"
+            }
+        ],
+        "tournamentName": "Random",
+        "races":[
+            "Sunshine_Airport_Course",
+            "SNES_Rainbow_Road_Course",
+            "N64_Yoshi_Valley_Course",
+            "Hyrule_Circuit_Course"
+        ]
+    },
+    {
+        "id":"4",
+        "tournamentID": "3",
+        "currentStage": "Quarter Finals",
+        "date": "2023-01-01",
+        "status": "finished",
+        "rankings":[
+            {
+                "player":"Player 1",
+                "points":"60"
+            },
+            {
+                "player":"Player 2",
+                "points":"50"
+            },
+            {
+                "player":"Player 3",
+                "points":"40"
+            },
+            {
+                "player":"Player 4",
+                "points":"30"
+            }
+        ],
+        "tournamentName": "Egg_Cup"
+    },
+    {
+        "id":"5",
+        "tournamentID": "3",
+        "currentStage": "Semi Finals",
+        "date": "2023-01-01",
+        "status": "finished",
+        "rankings":[
+            {
+                "player":"Player 1",
+                "points":"60"
+            },
+            {
+                "player":"Player 2",
+                "points":"50"
+            },
+            {
+                "player":"Player 3",
+                "points":"40"
+            },
+            {
+                "player":"Player 4",
+                "points":"30"
+            }
+        ],
+        "tournamentName": "Triforce_Cup"
+    },
+    {
+        "id":"6",
+        "tournamentID": "3",
+        "currentStage": "Finals",
+        "date": "2023-01-01",
+        "status": "finished",
+        "rankings":[
+            {
+                "player":"Player 1",
+                "points":"60"
+            },
+            {
+                "player":"Player 2",
+                "points":"50"
+            },
+            {
+                "player":"Player 3",
+                "points":"40"
+            },
+            {
+                "player":"Player 4",
+                "points":"30"
+            }
+        ],
+        "tournamentName": "Egg_Cup"
+    },
+    {
+        "id":"7",
+        "tournamentID": "2",
+        "currentStage": "Group Stage",
+        "date": "TBD",
+        "status": "TBP",
+        "tournamentName": "Crossing_Cup"
+    },
+    {
+        "id":"8",
+        "tournamentID": "2",
+        "currentStage": "Group Stage",
+        "date": "2023-01-01",
+        "status": "TBP",
+        "tournamentName": "Random"
+    }
+]

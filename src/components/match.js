@@ -19,7 +19,7 @@ const Match = (props) => {
 
   const redirect = (id) => {
     console.log(`redirecting to match page with id ${id}`);
-    window.location.href = `/matches/${id}`;
+    window.location.href = `#/matches/${id}`;
     }
 
   return (

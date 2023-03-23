@@ -1,6 +1,8 @@
 //component to render a match summary
 
-const MatchSummary = () => {
+const MatchSummary = (props) => {
+
+  console.log(props);
 
     const tournament_phases = [
         "Group Stage",
@@ -24,7 +26,7 @@ const MatchSummary = () => {
     }
 
   const fakeData = {
-    name: "rnadom tournament name",
+    name: "random tournament name",
     date: randomDate(),
     currentStage: tournament_phases[Math.floor(Math.random() * 5)],
     status: status[Math.floor(Math.random() * 2)],
@@ -40,37 +42,37 @@ const MatchSummary = () => {
         </li>
         <li>
           <h4>Tournament name</h4>
-          <span>{fakeData.name}</span>
+          <span>{props.data.tournament.name}</span>
         </li>
         <li>
           <h4>Date Match</h4>
-          <span>{fakeData.date}</span>
+          <span>{props.data.match.date}</span>
         </li>
         <li>
           <h4>Stage</h4>
-          <span>{fakeData.currentStage}</span>
+          <span>{props.data.match.currentStage}</span>
         </li>
         <li>
           <h4>Status</h4>
-          <span>{fakeData.status}</span>
+          <span>{props.data.match.status}</span>
         </li>
         {
-            fakeData.status === "TBP" ? (
+            props.data.match.status === "TBP" ? (
                 <li>
                     <div class="main-border-button border-no-active">
-                        <a href={"#"}>TBP</a>
+                        <a href={"#/matches/"+props.data.match.id}>TBP</a>
                     </div>
                 </li>
-            ) : fakeData.status === "In Progress" ? (
+            ) : props.data.match.status === "In Progress" ? (
                 <li>
                     <div class="main-border-button">
-                        <a href={"/matches/"+fakeData.id}>Check out</a>
+                        <a href={"#/matches/"+props.data.match.id}>Check out</a>
                     </div>
                 </li>
             ) : (
                 <li>
                     <div class="main-border-button">
-                        <a href={"/matches/"+fakeData.id}>Check out</a>
+                        <a href={"#/matches/"+props.data.match.id}>Check out</a>
                     </div>
                 </li>
             )

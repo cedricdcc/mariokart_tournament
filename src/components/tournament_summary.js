@@ -2,19 +2,21 @@
 
 const TournamentSummary = (props) => {
 
-    const tournament_phases = [
-        "Group Stage",
-        "Round of 16",
-        "Quarter Finals",
-        "Semi Finals",
-        "Finals"
-      ]
-    
-    const status = [
-        "Registration",
-        "In Progress",
-        "Finished"
-    ]
+  console.log(props);
+
+  const tournament_phases = [
+    "Group Stage",
+    "Round of 16",
+    "Quarter Finals",
+    "Semi Finals",
+    "Finals"
+  ]
+
+  const status = [
+    "Registration",
+    "In Progress",
+    "Finished"
+  ]
 
   const fakeData = {
     name: "tournament name",
@@ -24,48 +26,61 @@ const TournamentSummary = (props) => {
     id: Math.floor(Math.random() * 1000)
   }
 
+  //change "Date added" depending on the status of the tournament
+  //if the tournament is in registration, then the date added => "end registration date"
+  //if the tournament is in progress, then the date added => "start date"
+  //if the tournament is finished, then the date added => "end date"
+
   return (
-    <div class="item">
+    <div class={props.class}>
       <ul>
         <li>
           <img src="assets/images/game-01.jpg" alt="" class="templatemo-item" />
         </li>
         <li>
-          <h4>{fakeData.name}</h4>
-          <span>Sandbox</span>
+          <h4>{props.data.name}</h4>
+          <span>{props.data.game}</span>
         </li>
         <li>
-          <h4>Date Added</h4>
-          <span>{fakeData.date}</span>
+          {
+            props.data.status === "Registration" ? (
+              <h4>End Registration</h4>
+            ) : props.data.status === "In Progress" ? (
+              <h4>Start Date</h4>
+            ) : (
+              <h4>End Date</h4>
+            )
+          }
+          <span>{props.data.date}</span>
         </li>
         <li>
           <h4>Stage</h4>
-          <span>{fakeData.currentStage}</span>
+          <span>{props.data.currentStage}</span>
         </li>
         <li>
           <h4>Status</h4>
-          <span>{fakeData.status}</span>
+          <span>{props.data.status}</span>
         </li>
         {
-            fakeData.status === "Registration" ? (
-                <li>
-                    <div class="main-border-button">
-                        <a href={"/tournament/"+fakeData.id}>Register</a>
-                    </div>
-                </li>
-            ) : fakeData.status === "In Progress" ? (
-                <li>
-                    <div class="main-border-button">
-                        <a href={"/tournament/"+fakeData.id}>Check out</a>
-                    </div>
-                </li>
-            ) : (
-                <li>
-                    <div class="main-border-button border-no-active">
-                        <a href="#">Finished</a>
-                    </div>
-                </li>
-            )
+          props.data.status === "Registration" ? (
+            <li>
+              <div class="main-border-button">
+                <a href={props.data.registration_url}>Register</a>
+              </div>
+            </li>
+          ) : props.data.status === "In Progress" ? (
+            <li>
+              <div class="main-border-button">
+                <a href={"#/tournament/" + props.data.id}>Check out</a>
+              </div>
+            </li>
+          ) : (
+            <li>
+              <div class="main-border-button border-no-active">
+                <a href="#">Finished</a>
+              </div>
+            </li>
+          )
         }
       </ul>
     </div>

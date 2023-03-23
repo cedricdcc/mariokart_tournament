@@ -1,7 +1,10 @@
 //all matches component here
 import MatchSummary from "./match_summary";
 
-const AllMatches = () => {
+const AllMatches = (props) => {
+
+  console.log(props);
+
   return (
     <div class="gaming-library">
       <div class="col-lg-12">
@@ -10,10 +13,15 @@ const AllMatches = () => {
             <em>All</em> Matches
           </h4>
         </div>
-        <MatchSummary />
-        <MatchSummary />
-        <MatchSummary />
-        <MatchSummary />
+        {
+          props.data.MatchData.map((match) => {
+            const matchdata = {
+              "match": match,
+              "tournament": props.data.TournamentData.find((tour) => tour.id === match.tournamentID)
+            }
+            return <MatchSummary data={matchdata} />
+          })
+        }
       </div>
     </div>
   );

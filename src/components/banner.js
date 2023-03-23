@@ -11,7 +11,7 @@ const Banner = () => {
               <em>Check</em> Our Latest tournament here
             </h4>
             <div class="main-button">
-              <a href="/TODO-put_link-to-latest-tourny-here">Register now</a>
+              <a href="#/TODO-put_link-to-latest-tourny-here">Register now</a>
             </div>
           </div>
         </div>

@@ -20,7 +20,7 @@ const UpcomingMatches = () => {
                   <Match />
                   <div class="col-lg-12">
                     <div class="main-button">
-                      <a href="/TODO-link_to_latest_match_played">Latest Match</a>
+                      <a href="#/TODO-link_to_latest_match_played">Latest Match</a>
                     </div>
                   </div>
                 </div>

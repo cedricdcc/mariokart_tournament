@@ -1,0 +1,29 @@
+[
+    {
+        "id": "1",
+        "status": "Registration",
+        "name": "Project 1",
+        "date": "2023-01-01",
+        "currentStage": "TBD",
+        "game": "Mario Kart 8 Deluxe",
+        "registration_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+    },
+    {
+        "id": "2",
+        "status": "In Progress",
+        "name": "Project 2",
+        "date": "2023-01-01",
+        "currentStage": "Quarter Finals",
+        "game": "Mario Kart 8 Deluxe",
+        "registration_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+    },
+    {
+        "id": "3",
+        "status": "Finished",
+        "name": "Project 3",
+        "date": "2023-01-01",
+        "currentStage": "Finished",
+        "game": "Mario Kart 8 Deluxe",
+        "registration_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+    }
+]
