@@ -1,19 +1,15 @@
 import $ from "jquery";
-import { useLocation } from "react-router-dom";
 import logo from "../assets/images/Mario_Kart_8_logo.svg";
 import shyguy from "../assets/images/blue_shy_guy.png";
 
 function Header() {
-  const location = useLocation();
 
-  // Menu Dropdown Toggle
-  if ($(".menu-trigger").length) {
-    $(".menu-trigger").on("click", function () {
-      console.log(location.pathname);
-      $(this).toggleClass("active");
-      $(".header-area .nav").slideToggle(200);
-    });
-  }
+  //function here to give the menu trigger an active class when the menu is open
+  const menuTriggerActive = () => {
+    $(".menu-trigger").addClass("active");
+    $(".header-area .nav").slideToggle(200);
+  };
+
 
   // Menu elevator animation
   //TODO add animation for menu dropdown and add animation for menu dropdown
@@ -51,7 +47,7 @@ function Header() {
                     </a>
                   </li>
                 </ul>
-                <a class="menu-trigger">
+                <a class="menu-trigger" onClick={()=> menuTriggerActive()}>
                   <span>Menu</span>
                 </a>
               </nav>
