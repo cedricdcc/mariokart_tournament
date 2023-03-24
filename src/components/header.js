@@ -3,13 +3,20 @@ import logo from "../assets/images/Mario_Kart_8_logo.svg";
 import shyguy from "../assets/images/blue_shy_guy.png";
 
 function Header() {
-
   //function here to give the menu trigger an active class when the menu is open
   const menuTriggerActive = () => {
     $(".menu-trigger").addClass("active");
     $(".header-area .nav").slideToggle(200);
   };
 
+  //event listener here that checks if the screen is resized and if the width 872px or less
+  //if the width is 872px or less then the menu trigger is removed from the active class and the menu is hidden
+  window.addEventListener("resize", () => {
+    if (window.innerWidth <= 872) {
+      $(".menu-trigger").removeClass("active");
+      $(".header-area .nav").slideUp(200);
+    }
+  });
 
   // Menu elevator animation
   //TODO add animation for menu dropdown and add animation for menu dropdown
@@ -22,11 +29,7 @@ function Header() {
             <div class="col-12">
               <nav class="main-nav">
                 <a href="#/" class="logo">
-                  <img
-                    src={logo}
-                    alt=""
-                    className="logo_header"
-                  ></img>
+                  <img src={logo} alt="" className="logo_header"></img>
                 </a>
                 <ul class="nav">
                   <li>
@@ -42,12 +45,11 @@ function Header() {
                   </li>
                   <li>
                     <a href="#/about">
-                      About{" "}
-                      <img src={shyguy} alt=""></img>
+                      About <img src={shyguy} alt=""></img>
                     </a>
                   </li>
                 </ul>
-                <a class="menu-trigger" onClick={()=> menuTriggerActive()}>
+                <a class="menu-trigger" onClick={() => menuTriggerActive()}>
                   <span>Menu</span>
                 </a>
               </nav>
