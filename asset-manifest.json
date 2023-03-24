@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.a9f5cfd3.css",
-    "main.js": "./static/js/main.26a44f6a.js",
+    "main.js": "./static/js/main.e6afc713.js",
     "static/media/fa-solid-900.ttf": "./static/media/fa-solid-900.de78ce19b6954a6f4144.ttf",
     "static/media/MK8_Rainbow_Road_Course_Icon.png": "./static/media/MK8_Rainbow_Road_Course_Icon.32e8f82323197eb22c46.png",
     "static/media/MK8_N64_Rainbow_Road_Course_Icon.png": "./static/media/MK8_N64_Rainbow_Road_Course_Icon.aea918c00edffb1dee9d.png",
@@ -77,10 +77,10 @@
     "static/media/fa-v4compatibility.woff2": "./static/media/fa-v4compatibility.a9f39cf4a35334e80396.woff2",
     "index.html": "./index.html",
     "main.a9f5cfd3.css.map": "./static/css/main.a9f5cfd3.css.map",
-    "main.26a44f6a.js.map": "./static/js/main.26a44f6a.js.map"
+    "main.e6afc713.js.map": "./static/js/main.e6afc713.js.map"
   },
   "entrypoints": [
     "static/css/main.a9f5cfd3.css",
-    "static/js/main.26a44f6a.js"
+    "static/js/main.e6afc713.js"
   ]
 }
