@@ -1,5 +1,6 @@
 //use info from the data folder to get the data from the google spreadsheet
 const tournaments = require('../data/tournaments.json');
+const fetch = require('node-fetch');
 
 //console.log(tournaments);
 
@@ -14,10 +15,6 @@ const getRegURL = (data) => {
     });
     return regURL;
 }
-
-getRegURL(tournaments);
-//console.log(getRegURL(tournaments));
-
 //function to get all the data from a google pages spreadsheet eg:https://docs.google.com/spreadsheets/d/1S-K6slgqIPrvtJ5Y5Hv1vXceNXrcpnt912WGeVLoE5M/edit?usp=sharing
 //this function is used to get the data from the google spreadsheet
 //first convert the url to one that gets the data
@@ -60,4 +57,4 @@ const getRegData = async (url) => {
     return regData;
 }
 
-console.log(getRegData(getRegURL(tournaments)[0]))
+//console.log(getRegData(getRegURL(tournaments)[0]))

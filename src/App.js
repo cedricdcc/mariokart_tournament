@@ -13,6 +13,7 @@ import SpecificMatch from './pages/specific_match';
 import Matches from './pages/matches';
 import TournamentData from './data/tournaments.json';
 import MatchData from './data/matches.json';
+import AdminPage from './pages/admin_dashboard';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
         <Route exact path="/tournament" element={<Tournament data={data}/>}/>
         <Route path="/matches/:MatchID" element={<SpecificMatch data={data}/>}/>
         <Route exact path="/matches" element={<Matches data={data}/>} />
+        <Route path="/admin" element={<AdminPage data={data}/>} />
         <Route path="*" element={<NotFoundPage/>} />
     </Routes>
   );
